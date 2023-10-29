@@ -34,7 +34,7 @@ router.post('/test', (req, res) => {
         post_image: `/img/mv_img/${post_image.name}`
     }).then(() => {
         console.log('Post Ekleme Başarılı')
-        res.redirect('/')
+        res.redirect('/blog')
     }).catch(error => {
         console.log(error)
     })
